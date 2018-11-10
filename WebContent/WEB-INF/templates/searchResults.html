@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search results</title>
+<link rel="stylesheet" type="text/css" href="searchResults.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+ <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="margin: 0;" onload="searchScroll()">
+<!--
+	<header id="header">
+			<a href=""><img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Canal%2B_Seriale.png"></a>
+			<input type="text" id="search" name="Search" placeholder=" Szukaj..">
+		<nav id="navigationMain">
+
+			<li class="navigationOption">Filmy</li>
+			<li class="navigationOption">Seriale</li>
+			<li class="navigationOption">Gry</li>
+			<li class="navigationOption">Muzyka</li>
+			<div class="dropdown">
+			<li class="navigationOption"> 
+			User
+		  <div class="dropdown-content">
+		    <a href="#">Profil</a>
+		    <a href="#">lorem</a>
+		    <a href="#">Wyloguj</a>
+		  </div>
+			 </li>
+			 </div>
+
+			<a style="display:default" href="register.jsp"><li ><div id="Register">Zaloz konto</div></li></a>
+		</nav>
+			
+	
+
+	</header>
+-->
+
+	<div id="results_1" >
+		<h3 class="result_text">Znaleziono  wyników.</h3>
+	</div>
+
+
+<div class="container results_new" style="background-color: gray;">
+    <div class="row">
+        <div class="col-sm-12 col-md-3">
+        	<div class="results_details_new">
+	        	<img src="https://www.classicposters.com/images/nopicture.gif">
+				<img src="http://image.tmdb.org/t/p/w185//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg">
+			</div>
+			</div>
+       
+        <div class="col-sm-12 col-md-9">
+        	<div class="results_details_big_new"><div id="top25_int"><p>1</p></div><h3>Interstellar</h3><p>(2011)</p>
+        	</div>
+        	<div class="results_details_big_new">
+				<div class="results_details_big_sub_new"><p>Popularity: </p></div>
+				<div class="results_details_big_sub_new"><p>Original language: </p></div>
+			
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div class="results_new">
+<div class="container">
+	<a href="#">
+    <div class="row">
+        <div class="col-sm-2 col-lg-1">
+        	<div class="results_details_new">
+        	<img src="https://www.classicposters.com/images/nopicture.gif">
+			<img src="http://image.tmdb.org/t/p/w185//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg"></div>
+			</div>
+        </div>
+        <div class="col-sm-9 col-md-3">
+        	<div class="results_details_big_new">
+	        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	</div>
+        </div>
+    </div>
+	</a>
+</div>
+</div>
+
+<div class="results">
+	<a href="#">
+	<div class="results_details">
+		<img src="https://www.classicposters.com/images/nopicture.gif">
+		<img src="http://image.tmdb.org/t/p/w185//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg"></div>
+	<div class="results_details_big"><div id="top25_int"><p>1</p></div><h3>Interstellar</h3><p>(2011)</p>
+
+	</div>
+	<div class="results_details_big">
+		<div class="results_details_big_sub"><p>Popularity: </p></div>
+		<div class="results_details_big_sub"><p>Original language: </p></div>
+	</div>
+	</a>
+</div>
+-->
+
+
+<!--
+<script type="text/javascript">
+
+		window.addEventListener("resize", function() {
+    if (window.matchMedia("(min-width: 1230px)").matches) {
+    	changeSearchResultsResolution(0);
+    } else if(window.matchMedia("(min-width: 750px)").matches){
+    	changeSearchResultsResolution(1);
+    }else{
+    	changeSearchResultsResolution(2);
+
+    }
+});		
+	
+		function changeSearchResultsResolution(i){
+			if(i==0){
+				document.getElementById("results_1").style.width="1000px";
+
+				var x=document.getElementsByClassName("results");
+				var i;
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="1000px";
+				}
+
+				x=document.getElementsByClassName("results_details_big");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="800px";
+				}
+				x=document.getElementsByClassName("results_details");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="200px";
+				}
+
+			}else if(i==1){
+				document.getElementById("results_1").style.width="750px";
+
+				var x=document.getElementsByClassName("results");
+				var i;
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="750px";
+				}
+
+				x=document.getElementsByClassName("results_details_big");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="550px";
+				}
+				x=document.getElementsByClassName("results_details");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="200px";
+				}
+			}else if(i==2){
+				document.getElementById("results_1").style.width="90%";
+
+				var x=document.getElementsByClassName("results");
+				var i;
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="90%";
+				}
+
+				x=document.getElementsByClassName("results_details_big");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="50%";
+				}
+				x=document.getElementsByClassName("results_details");
+				for (i = 0; i < x.length; i++) {
+				    x[i].style.width="50%";
+				}
+			}
+		}
+	</script>
+-->
+</body>
+</html>

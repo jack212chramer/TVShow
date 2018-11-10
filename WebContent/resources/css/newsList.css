@@ -1,0 +1,82 @@
+.mainNewsBlur{
+	height: 400px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #2e2e2e;
+	text-align: center;
+	background-image: url("https://images.amcnetworks.com/amc.com/wp-content/uploads/2012/06/BB_S5B_004_sm.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% ;
+	max-width:800px;
+	margin: 25px auto;
+
+}
+.mainNewsBlurh3{
+	margin-top: 270px;
+	padding-top: 25px;
+	font-family: Roboto,sans-serif;
+	font-weight: 700;
+	color: #2e2e2e;
+	font-size: 28px;
+	height: 125px;
+	color: black;
+	background-color: white;
+	border-radius: 25px;
+	opacity: 0.9;
+	padding-left:5px;
+	padding-right:5px;
+}
+@media only screen and (max-width: 768px) {
+    .mainNewsBlurh3 {
+        padding-top: 0;
+    }
+}
+
+.smallNews{
+	margin: 10px auto;
+	height: 240px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #2e2e2e;
+	background-image: url("https://joemonster.org/images/vad/img_34383/6a82d0b8a6beb639403ca52e227d6dc0.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	text-align: center;
+	max-width:800px;
+	background-size: 100% auto;
+	
+	
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.smallNews h3{
+	font-family: Roboto,sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #2e2e2e;
+	background-color: white;
+	height: 75px;
+	margin-top: 170px;
+	opacity: 0.9;
+	border-radius: 25px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .smallNews {
+        height: 190px;
+    }
+    .smallNews h3{
+    	margin-top: 100px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.bbtn{
+	background-color: #4d0066;
+	font-family:Roboto,sans-serif;
+	color:white;
+	border-color: #4d0066;
+    border-width: 2px; 
+    border-style: none;
+    border-radius: 5px;
+    border-style: solid;
+}
+.ibtn{
+	background-color: white;
+	font-family:Roboto,sans-serif;
+	color:#4d0066;
+	border-color: #4d0066;
+    border-width: 2px; 
+    border-style: none;
+    border-radius: 5px;
+    border-style: solid;
+}
+.comment{
+	font-family: Roboto,sans-serif;
+	color: #2e2e2e;
+	max-width:1140px;
+	margin:50px auto;
+	padding:15px;
+	
+}
+.comment_single{
+	border-radius:25px;
+	border-style:solid;
+	border-color:#4d0066;
+	padding:10px;
+	margin:10px;
+	
+}
+.comment h4{
+	font-size: 18px;
+}
+.comment p{
+	font-size: 16px;
+}

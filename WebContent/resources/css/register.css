@@ -1,0 +1,27 @@
+/* Style all input fields */
+#regForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+#username_alert{
+	color:red;
+	transition:1s;
+	display:none;
+}
+
+#submit{
+	background-color:#4d0066;
+	cursor: pointer;
+	color:white;
+}
+
+#regForm{
+	max-width:450px;
+	margin:auto;
+	padding:15px;
+}

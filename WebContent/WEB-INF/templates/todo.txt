@@ -1,0 +1,12 @@
+todo:
+
+director
+
+login -> Spring security
+cookies
+facebook/gmail register
+rekomendacje
+walidacja dao
+obsluga wyjatkow
+hibernate
+popularity

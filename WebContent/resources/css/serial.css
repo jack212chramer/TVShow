@@ -1,0 +1,187 @@
+#main_info_page{
+	opacity: 0.95;
+	transition:1s;
+	max-width: 1000px;
+	min-height: 600px;
+	background-color: white;
+	margin: auto;
+	margin-bottom: 50px;
+	border-style: none;
+	border-color: #4d0066;
+	border-radius: 25px;
+}
+.main_tile{
+	float: left;
+	width: 50%;
+	height: 400px;
+	margin:15px auto;
+}
+.main_tile img{
+	position: absolute;
+	border-radius:25px;
+	border-color: #4d0066;
+	max-height: 100%;
+	max-width: 90%;
+	width:250px;
+}
+.main_tile h3{
+	margin: 0 -150px;
+	padding: 0;
+	padding-top: 30%;
+	font-family: Roboto,sans-serif;
+	font-size: 40px;
+	color: #2e2e2e;
+	width: 80%;
+
+}
+.main_tile h2{
+	padding: 25px;
+	font-family: Roboto,sans-serif;
+	font-size: 40px;
+	color: #2e2e2e;
+	
+}
+.main_tile p{
+	margin: 0 -145px;
+	font-family: Roboto,sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #737373;
+	max-width:100%;
+}
+.main_tile_details{
+	margin: 100px 0;
+	height: 50%;
+}
+.main_tile_details p{
+	float: left;
+}
+#overview{
+	margin: 0;
+	padding: 25px;
+	padding-top: 0;
+	padding-left: 15px;
+	text-align: justify;
+}
+#main_info_page_container{
+	width:100%;
+}
+#main_info_page_container_img{
+	    background-position: top;
+	background-size:cover;
+	  background-repeat: no-repeat;
+	width:100%;
+	min-height:800px; 
+}
+@media only screen and (max-width: 768px) {
+
+   #main_info_page_container_img { 
+      min-height:300px; 
+   }
+
+}
+.main_info_page_subcontainer{
+	padding: 30px;
+}
+.overview{
+	font-family: Roboto,sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #2e2e2e;
+	width:1000px;
+	margin:auto;
+}
+.overview h2{
+	padding:10px;
+}
+
+#creator_info_container{
+	padding: 50px;
+	max-width: 1000px;
+	margin: auto;
+}
+#creator_info_container img{
+	max-height: 100px;
+	min-width:60px;
+	margin: -50% 0;
+}
+.creator_info{
+	padding-bottom: 75px;
+}
+.creator_info p{
+	color:#2e2e2e;	
+}
+.main_tile_ocena p{
+	max-width:80%;
+	margin:auto;
+}
+.rating{
+	width:100%;
+	margin-top:15px;
+	text-align:center;
+	border-radius:25px;
+	height:350px;
+	transition:1s;
+}
+.main_tile_ocena h3{
+	padding-top:25px;
+}
+.main_tile_ocena h1{
+	font-size:100px;
+}
+.main_tile_ocena p{
+	padding-top:25px;
+}
+.main_tile_ocena button{
+	margin-top:25px;
+	width:90%;
+	cursor:pointer;
+	border-radius:25px;
+}
+#rating-stars{
+	width:300px;
+	margin: auto;
+	margin-top:25px;
+	visibility:hidden;
+}
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 

@@ -1,0 +1,37 @@
+.seasons_container{
+	font-family:Roboto,sans-serif;
+}
+.seasons_container h2{
+	padding-bottom:25px;
+}
+.season-link{
+  border-style: solid;
+    border-color: #4d0066;
+    border-width: 2px;
+    border-radius: 15px;
+    text-align:center;
+}
+.season-link {
+	padding:15px;
+	color:white;
+	font-weight:700;
+	text-decoration:none;
+	cursor: pointer;
+	width:100%;
+}
+.episode_title{
+	float:left;
+}
+.episode_date{
+	float:right;
+	color:#737373;
+}
+.episode_overview{
+	padding-top:25px;
+	display:block;
+}
+.seasons_container h3{
+	font-size:16px;
+	padding-bottom:15px;
+	font-weight:700;
+}
